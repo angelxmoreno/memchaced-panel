@@ -33,6 +33,7 @@
     "angular-strap": "git://github.com/angelxmoreno/angular-strap.git#electron-compatibility",
     "angular-ui-router": "^0.3.1",
     "bower": "^1.7.9",
+    "electron-notifications": "0.0.3",
     "electron-settings": "^1.0.4",
     "jquery": "^2"
   },

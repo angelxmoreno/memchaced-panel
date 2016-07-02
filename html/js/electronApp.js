@@ -6,5 +6,6 @@ module.exports = require('angular').module('electronApp', [
     require('angular-animate'), 
     require('angular-strap'),
     require('./services/user-settings'),
+    require('./services/notifications'),
     require('./routes')
 ]);
