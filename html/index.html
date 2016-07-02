@@ -9,8 +9,11 @@
         <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>    
         <link href="lib/bootstrap/dist/css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
         <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/angular-motion/dist/angular-motion.css" rel="stylesheet" type="text/css"/>
+        <link href="css/angular.css" rel="stylesheet" type="text/css"/>
         <link href="css/nav.css" rel="stylesheet" type="text/css"/>
-        <script>
+        
+        <script type="text/javascript">
             window.$ = window.jQuery = require('jquery');
         </script>
     </head>
@@ -89,7 +92,14 @@
                 and Electron <script>document.write(process.versions.electron)</script>.
             </section>
         </div>
-        <script src="lib/jquery/dist/jquery.js" type="text/javascript"></script>
-        <script src="lib/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
-    </body>
+    <body ng-app="electronApp">
+    <ui-view></ui-view>
+    <!-- Libs -->
+    <script src="lib/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
+
+    <!-- App JS -->
+    <script type="text/javascript">
+            require('./app.js');
+    </script>
+</body>
 </html>
